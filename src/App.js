@@ -9,23 +9,12 @@ import SecureHeader from './shared/SecureHeader';
 import SecureFooter from './shared/SecureFooter';
 import SecureLeftPanel from './shared/SecureLeftPanel';
 
-import CareersList from './CareersList';
-import CareerUpdate from './CareerUpdate';
-
-
-import ContactList from './ContactList';
-import ContactUpdate from './ContactUpdate';
 
 
 import SecureRightPanel from './shared/SecureRightPanel';
-import Header from './shared/Header';
-import Footer from './shared/Footer';
 
 import Home from './components/Home';
 import Dashboard from './components/Dashboard';
-import ImagesList from './components/ImagesList';
-import Contact from './components/Contact';
-import Career from './components/Career';
 import Login from './shared/Login';
 
 import CategoryList from './CategoryList';
@@ -48,15 +37,8 @@ import PageContent from './components/PageContent';
 import BlogList from './components/Blog/BlogList';
 import CreateBlog from './components/Blog/CreateBlog';
 import UpdateBlog from './components/Blog/UpdateBlog';
-import DeleteBlogModal from './components/Blog/DeleteBlogModal';
 import ViewBlog from './components/Blog/ViewBlog';
-import PortfolioList from './PortfolioList';
-import PortfolioUpdate from './PortfolioUpdate';
-import CreatePortfolio from './CreatePortfolio';
 
-import TestimonialsList from './TestimonialsList';
-import TestimonialUpdate from './TestimonialUpdate'
-import CreateTestimonials from './CreateTestimonials';
 function App() {
 
   //temp code to keep server live
@@ -96,11 +78,6 @@ function App() {
                       <Route path='/home' element={<Home />} />
                       <Route path='/dashboard' element={<Dashboard />} />
 
-                      <Route path='/career' element={<CareersList />} />
-                      <Route path='/careerupdate/:srno' element={<CareerUpdate />} />
-
-                      <Route path='/contact' element={<ContactList />} />
-                      <Route path='/contactupdate/:srno' element={<ContactUpdate />} />
 
                       <Route path='/categorylist' element={<CategoryList />} />
                       <Route path='/categoryupdate/:srno' element={<CategoryUpdate />} />
@@ -115,9 +92,7 @@ function App() {
                       <Route path='/pagecontentupdate/:srno' element={<UpdatePageContent />} />
                       <Route path='/createpagecontent' element={<CreatePageContent />} />
 
-                      <Route path='/imageslist' element={<ImagesList />} />
-                      <Route path='/contact' element={<Contact />} />
-                      <Route path='/career' element={<Career />} />
+                     
                       <Route path='/pagecontentlist' element={<PageContent />} />
                       <Route path='/login' element={<Login />} />
                       
@@ -130,13 +105,7 @@ function App() {
                       <Route path='/blogupdate/:blogid' element={<UpdateBlog />} />
                       <Route path='/blogview/:blogid' element={<ViewBlog />} />
 
-                      <Route path='/portfoliolist' element={<PortfolioList />} />
-                      <Route path='/portfolioUpdate/:portfolio_id' element={<PortfolioUpdate />} />
-                      <Route path='/createPortfolio' element={<CreatePortfolio />} />
-                      
-                      <Route path='/testimonialslist' element={<TestimonialsList />} />
-                      <Route path='/testimonialUpdate/:testimonialid' element={<TestimonialUpdate />} />
-                      <Route path='/createTestimonials' element={<CreateTestimonials />} />
+                  
                       
                       <Route path='/' element={<Home />} />
                     </Routes>
