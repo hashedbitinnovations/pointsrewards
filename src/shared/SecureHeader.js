@@ -10,7 +10,6 @@ const SecureHeader = () => {
     const { loginstatus } = appstate;
 
     const studentpages = ['/myStatus', '/class', '/assignment'];
-    const teacherpages = [];
 
     const checkLoginandRedirect = () => {
         const token = localStorage.getItem('jwttoken');
@@ -37,7 +36,7 @@ const SecureHeader = () => {
   return (
     <div className='row secureheader'>
       <div className='col-6 bg-info bg-opacity-10 py-1'>
-        <h3>HashedBit CMS Admin</h3>
+        <h3>Points & Rewards System</h3>
       </div>
       <div className='col-6 bg-info bg-opacity-10 py-1'>
         <div className='text-right d-flex justify-content-end'>

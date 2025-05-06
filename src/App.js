@@ -25,19 +25,12 @@ import PostContentShowAll from './PostContentShowAll';
 import UpdatePostContent from './UpdatePostContent';
 import CreatePostContent from './CreatePostContent';
 
-import PagesCrud from './PagesCrud';
-import CreatePage from './CreatePage';
-import UpdatePage from './UpdatePage';
-
-import PageContentShowAll from './PageContentShowAll';
-import UpdatePageContent from './UpdatePageContent';
-import CreatePageContent from './CreatePageContent';
-import PageContent from './components/PageContent';
-
 import BlogList from './components/Blog/BlogList';
 import CreateBlog from './components/Blog/CreateBlog';
 import UpdateBlog from './components/Blog/UpdateBlog';
 import ViewBlog from './components/Blog/ViewBlog';
+
+import BadgesPoints from './components/BadgesPoints';
 
 function App() {
 
@@ -88,17 +81,8 @@ function App() {
                       <Route path='/postupdate/:srno' element={<UpdatePostContent />} />
                       <Route path='/createpost' element={<CreatePostContent />} />
 
-                      <Route path='/pagecontentlist' element={<PageContentShowAll />} />
-                      <Route path='/pagecontentupdate/:srno' element={<UpdatePageContent />} />
-                      <Route path='/createpagecontent' element={<CreatePageContent />} />
-
-                     
-                      <Route path='/pagecontentlist' element={<PageContent />} />
                       <Route path='/login' element={<Login />} />
-                      
-                      <Route path='/pages' element={<PagesCrud />} />
-                      <Route path='/createpage' element={<CreatePage />} />
-                      <Route path='/updatepage/:srno' element={<UpdatePage />} />
+                      <Route path='/badgespoints' element={<BadgesPoints />} />
 
                       <Route path='/blogslist' element={<BlogList />} />
                       <Route path='/blogcreate' element={<CreateBlog />} />

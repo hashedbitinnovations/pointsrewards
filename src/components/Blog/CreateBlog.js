@@ -21,8 +21,10 @@ const CreateBlog = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const username = window.localStorage.getItem('userid')
 
     const postData = {
+      username,
       postid,
       posttitle,
       postheading,
@@ -32,6 +34,10 @@ const CreateBlog = () => {
       featuredicon,
       category,
     };
+
+    console.log('postheading', postheading)
+    console.log('content', content)
+    console.log('category', category)
 
     if (
       !postheading ||
@@ -121,7 +127,7 @@ const CreateBlog = () => {
         
         <div>
           <label htmlFor="postid">Category:</label>
-          <select name="categories" className="form-control">
+          <select name="categories" className="form-control" onChange={(e) => setCategory(e.target.value)}>
           <option value="">-- Please Select --</option>
             {categories.map((category, index) => (
               <option value={category.displayname} key={index}> {category.displayname}</option>

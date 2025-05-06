@@ -117,14 +117,7 @@ function BlogList() {
               <td>{item.category}</td>
               <td>{item.author}</td>
               <td>{item.isactive}</td>
-              {/* <td>{item.createdby}</td>
-              <td>{item.createdon}</td>
-              <td>{item.updatedby}</td>
-              <td>{item.updatedon}</td> */}
 
-              <td>
-                <Link to={`/blogupdate/${item.srno}`} className='btn btn-warning'>Edit - To be updated</Link>
-              </td>
               <td>
                 <Link to={`/blogview/${item.srno}`} className='btn btn-primary'>View</Link>
               </td>
