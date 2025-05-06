@@ -17,10 +17,6 @@ import Home from './components/Home';
 import Dashboard from './components/Dashboard';
 import Login from './shared/Login';
 
-import CategoryList from './CategoryList';
-import CategoryAdd from './CategoryAdd';
-import CategoryDelete from './CategoryDelete'
-import CategoryUpdate from './CategoryUpdate'
 import PostContentShowAll from './PostContentShowAll';
 import UpdatePostContent from './UpdatePostContent';
 import CreatePostContent from './CreatePostContent';
@@ -70,12 +66,6 @@ function App() {
                     <Routes>
                       <Route path='/home' element={<Home />} />
                       <Route path='/dashboard' element={<Dashboard />} />
-
-
-                      <Route path='/categorylist' element={<CategoryList />} />
-                      <Route path='/categoryupdate/:srno' element={<CategoryUpdate />} />
-                      <Route path='/deleteId/:srno' element={<CategoryDelete />} />
-                      <Route path='/addueserid' element={<CategoryAdd />} />
 
                       <Route path='/postlist' element={<PostContentShowAll />} />
                       <Route path='/postupdate/:srno' element={<UpdatePostContent />} />
